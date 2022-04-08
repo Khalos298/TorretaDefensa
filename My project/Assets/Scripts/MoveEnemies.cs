@@ -34,10 +34,8 @@ public class MoveEnemies : MonoBehaviour
             }
             else
             {
-                Destroy(gameObject);
+                gameObject.SetActive(false);
             }
-
-
         }
         
         

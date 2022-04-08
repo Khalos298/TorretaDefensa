@@ -5,13 +5,16 @@ using UnityEngine;
 public class TowerCreator : MonoBehaviour
 {
     public GameObject prefTorre;
-    public int cantTorres; 
+    public int cantTorres;
+
+  
 
     private void OnMouseDown()
     {
         if(cantTorres > 0)
         {
             TowerSpawn();
+           
             cantTorres--;
         }
     }
@@ -20,4 +23,9 @@ public class TowerCreator : MonoBehaviour
     {
         GameObject TowerInstance = Instantiate(prefTorre, transform.position, Quaternion.identity);
     }
+   
+  
+
+
+   
 }

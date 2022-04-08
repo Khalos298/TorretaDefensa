@@ -1,5 +1,35 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2744559747274656929
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 484326347224650132}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &484326347224650132
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2744559747274656929}
+  m_LocalRotation: {x: 0.699195, y: -0, z: -0, w: 0.714931}
+  m_LocalPosition: {x: 0, y: 1.15, z: 0.851}
+  m_LocalScale: {x: 0.28693, y: 0.286904, z: 0.28699517}
+  m_Children: []
+  m_Father: {fileID: 6586945919162094350}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 88.725, y: 0, z: 0}
 --- !u!1 &6586945919162094346
 GameObject:
   m_ObjectHideFlags: 0
@@ -12,6 +42,7 @@ GameObject:
   - component: {fileID: 6586945919162094351}
   - component: {fileID: 6586945919162094344}
   - component: {fileID: 6586945919162094345}
+  - component: {fileID: 3334497830945258221}
   m_Layer: 0
   m_Name: Pref_Torreta
   m_TagString: Untagged
@@ -31,6 +62,7 @@ Transform:
   m_LocalScale: {x: 0.71586, y: 0.57197714, z: 0.71586}
   m_Children:
   - {fileID: 6586945920765713738}
+  - {fileID: 484326347224650132}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -96,6 +128,21 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &3334497830945258221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6586945919162094346}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c57ad449b54c2d149bcf18d464a6f1d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefTorre: {fileID: 6586945919162094346}
+  prefEnemy: {fileID: 2371688539244861178, guid: 509bde9d5c123b042ab7659c7a6ef554, type: 3}
+  "tama\xF1oGizmo": 10
 --- !u!1 &6586945919994759680
 GameObject:
   m_ObjectHideFlags: 0
